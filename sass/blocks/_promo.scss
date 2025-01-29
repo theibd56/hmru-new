@@ -186,6 +186,32 @@
     margin-top: 80px;
     &__heading {
       margin-bottom: 40px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    &__navigation {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      div {
+        cursor: pointer;
+        circle {
+          transition: all .3s ease;
+        }
+        &:hover:not(.swiper-button-disabled) {
+          circle {
+            opacity: 0.5;
+            stroke: #2C3336;
+          }
+        }
+        &.swiper-button-disabled {
+          opacity: 0.5;
+        }
+      }
+
     }
     &__slide {
       min-height: 570px;

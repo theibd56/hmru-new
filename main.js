@@ -130,24 +130,25 @@ document.addEventListener('click', (e) => {
     }
 });
 
-const popularSlider = new Swiper('.catalog-popular__container', {
-    slidesPerView: 3,
-    spaceBetween: 20,
-    loop: true,
-    breakpoints: {
-        300: {
-            slidesPerView: 2.25,
-        },
-        576: {
-            slidesPerView: 3,
-        },
-        992: {
-            slidesPerView: 4,
-        },
-    },
-})
-
+//sliders
 document.addEventListener('DOMContentLoaded', () => {
+    const popularSlider = new Swiper('.catalog-popular__container', {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        loop: true,
+        breakpoints: {
+            300: {
+                slidesPerView: 2.25,
+            },
+            576: {
+                slidesPerView: 3,
+            },
+            992: {
+                slidesPerView: 4,
+            },
+        },
+    })
+
     const promoAdvantagesSlider = new Swiper('.promo-advantages__slider .swiper', {
         slidesPerView: 3,
         spaceBetween: 20,
