@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const subMenu = document.querySelector(`.${name}_sub`);
         trigger?.addEventListener('click', () => {
             trigger.classList.toggle('active');
-            if (subMenu) subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block';
+            subMenu.classList.toggle('active');
         });
     });
 });
