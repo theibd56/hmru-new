@@ -5,6 +5,13 @@
         width: calc(25% - 23px);
       }
     }
+    &-feedback {
+      &__bg {
+        right: auto;
+        bottom: 0;
+        left: 600px;
+      }
+    }
   }
 }
 
@@ -28,6 +35,28 @@
     &-catalog {
       &__item {
         width: calc(33.33% - 20px);
+      }
+    }
+    &-feedback {
+      padding: 80px 0 250px;
+      &__content {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      &__title, &__descr, &__policy  {
+        text-align: center;
+      }
+      &__bg {
+        right: auto;
+        bottom: auto;
+        left: auto;
+        top: 70%;
+        img {
+          object-fit: contain;
+        }
+        &::before {
+          display: none;
+        }
       }
     }
   }
@@ -106,6 +135,26 @@
       }
       &__item {
         width: calc(50% - 5px);
+      }
+    }
+    &-feedback {
+      padding: 40px 0 200px;
+      &__content {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      &__row{
+        flex-direction: column;
+      }
+      &__top {
+        margin-bottom: 20px;
+      }
+      &__bottom {
+        grid-template: auto / 1fr;
+      }
+
+      &__bg {
+        top: 75%;
       }
     }
   }
@@ -202,6 +251,48 @@
             display: block;
           }
         }
+      }
+    }
+    &-feedback {
+      &__title {
+        font-size: 30px;
+      }
+      &__descr {
+        font-size: 16px;
+        max-width: calc(100% - 40px);
+        margin: 0 auto;
+        margin-bottom: 30px;
+      }
+      &__form {
+        max-width: calc(100% - 40px);
+        margin: 0 auto;
+      }
+      &__top {
+        margin-bottom: 10px;
+        gap: 10px;
+      }
+      &__row {
+        gap: 10px;
+        input, textarea {
+          height: 44px;
+          min-height: 44px;
+          font-size: 16px;
+
+          padding: 11px 20px;
+        }
+      }
+      &__bottom {
+        gap: 13px;
+        button {
+          height: 44px;
+          font-size: 16px;
+        }
+      }
+      &__policy {
+        font-size: 13px;
+
+        max-width: calc(100% - 30px);
+        margin: 0 auto;
       }
     }
   }
