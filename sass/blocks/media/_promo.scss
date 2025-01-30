@@ -17,6 +17,13 @@
 
 @media screen and (max-width: 992px) {
   .promo {
+    &-banner {
+      padding: 125px 0 325px;
+      &__bg {
+        bottom: -45%;
+        left: 10%;
+      }
+    }
     &-free {
       &__title {
         font-size: 32px;
@@ -64,6 +71,16 @@
 
 @media screen and (max-width: 768px) {
   .promo {
+    &-banner {
+      padding: 125px 0 325px;
+      &__bg {
+        bottom: -35%;
+        left: 5%;
+      }
+      &__content {
+        gap: 30px;
+      }
+    }
     &-free {
       height: auto;
       &__title {
@@ -79,8 +96,10 @@
 
       .container {
         margin-top: -100px;
-        position: static;
+        position: relative;
         transform: none;
+        top: auto;
+        left: auto;
       }
     }
     &-video {
@@ -162,6 +181,20 @@
 
 @media screen and (max-width: 576px) {
   .promo {
+    &-banner {
+      padding: 90px 0 275px;
+      &__bg {
+        bottom: -10%;
+        left: 5%;
+      }
+      &__link {
+        padding: 12px 30px;
+        font-size: 16px;
+      }
+      &__content {
+        gap: 20px;
+      }
+    }
     &-free {
       &__content {
         padding: 30px 20px;

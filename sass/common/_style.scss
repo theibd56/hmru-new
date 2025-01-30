@@ -115,7 +115,7 @@ h1 {
   font-size: 70px;
   font-style: normal;
   font-weight: 600;
-  line-height: 114.286%;
+  line-height: 133.333%;
 }
 
 h2 {
@@ -144,6 +144,10 @@ h4 {
 }
 
 @media screen and (max-width: 992px) {
+  h1 {
+    font-size: 50px;
+  }
+
   h2 {
     font-size: 42px;
   }
@@ -153,6 +157,10 @@ h4 {
   }
 }
 @media screen and (max-width: 768px) {
+  h1 {
+    font-size: 38px;
+  }
+
   h2 {
     font-size: 32px;
   }
@@ -162,6 +170,10 @@ h4 {
   }
 }
 @media screen and (max-width: 576px) {
+  h1 {
+    font-size: 30px;
+  }
+
   h2 {
     font-size: 21px;
   }
