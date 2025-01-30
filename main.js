@@ -158,10 +158,32 @@ document.addEventListener('DOMContentLoaded', () => {
             nextEl: '.promo-advantages__next',
             prevEl: '.promo-advantages__prev',
         },
+        pagination: {
+            el: '.promo-advantages__slider .swiper-pagination',
+            clickable: true,
+        },
         autoplay: {
             delay: 3000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
         },
+        breakpoints: {
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2.2,
+                spaceBetween: 20,
+            },
+            576: {
+                slidesPerView: 1.8,
+                spaceBetween: 10,
+            },
+            320: {
+                slidesPerView: 1.2,
+                spaceBetween: 10,
+            }
+        }
     });
 });

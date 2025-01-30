@@ -10,6 +10,16 @@
 
 @media screen and (max-width: 992px) {
   .promo {
+    &-advantages {
+      &__slider {
+        .swiper {
+          overflow: visible;
+        }
+      }
+      &__subtitle {
+        font-size: 32px;
+      }
+    }
     &-catalog {
       &__item {
         width: calc(33.33% - 20px);
@@ -20,6 +30,36 @@
 
 @media screen and (max-width: 768px) {
   .promo {
+    &-advantages {
+      &__heading {
+        margin-bottom: 20px;
+      }
+      &__navigation {
+        display: none;
+      }
+
+      .swiper-pagination {
+        position: static;
+        margin-top: 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .swiper-pagination-bullet {
+          width: 7px;
+          height: 7px;
+
+          border-radius: 50%;
+          background: #758289;
+          opacity: 0.2;
+          &-active {
+            opacity: 1;
+            background: #0071E3;
+          }
+        }
+      }
+    }
     &-catalog {
       &__heading {
         margin-bottom: 20px;
@@ -44,6 +84,25 @@
 
 @media screen and (max-width: 576px) {
   .promo {
+    &-advantages {
+      &__subtitle {
+        font-size: 21px;
+      }
+      &__slide {
+        min-height: 378px;
+        padding: 20px;
+        &_descr {
+          font-size: 15px;
+        }
+        &_img {
+          object-fit: cover;
+          height: 274px;
+        }
+      }
+      &__circle {
+        width: 80px;
+      }
+    }
     &-catalog {
       &__link {
         font-size: 16px;

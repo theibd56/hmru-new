@@ -247,6 +247,7 @@
         font-style: normal;
         font-weight: 300;
         line-height: normal;
+        opacity: 0.7;
       }
       &_img {
         width: 100%;
@@ -281,6 +282,10 @@
         left: -38px;
         top: -64px;
       }
+    }
+
+    .swiper-pagination {
+      display: none;
     }
   }
   &-catalog {
