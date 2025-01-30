@@ -10,6 +10,11 @@
 
 @media screen and (max-width: 992px) {
   .promo {
+    &-free {
+      &__title {
+        font-size: 32px;
+      }
+    }
     &-advantages {
       &__slider {
         .swiper {
@@ -30,6 +35,28 @@
 
 @media screen and (max-width: 768px) {
   .promo {
+    &-free {
+      height: auto;
+      &__title {
+        font-size: 28px;
+        text-align: center;
+      }
+      &__fields {
+        flex-direction: column;
+      }
+      &__policy {
+        text-align: center;
+      }
+
+      .container {
+        margin-top: -100px;
+        position: static;
+        transform: none;
+      }
+    }
+    &-video {
+      margin-top: 40px;
+    }
     &-advantages {
       margin-top: 40px;
       &__heading {
@@ -86,6 +113,32 @@
 
 @media screen and (max-width: 576px) {
   .promo {
+    &-free {
+      &__content {
+        padding: 30px 20px;
+      }
+      &__title {
+        font-size: 21px;
+      }
+      &__fields {
+        gap: 10px;
+        margin-bottom: 10px;
+        input {
+          height: 44px;
+          font-size: 16px;
+        }
+        button {
+          height: 44px;
+          font-size: 16px;
+        }
+      }
+      &__policy {
+        font-size: 13px;
+        a {
+          font-size: 13px;
+        }
+      }
+    }
     &-video {
       &__content {
         height: 500px;
