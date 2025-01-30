@@ -309,11 +309,13 @@
       }
     }
     &__wrapper {
-      display: grid !important;
-      grid-template: auto / repeat(5, 1fr);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 30px;
     }
     &__item {
+      width: calc(20% - 24px);
       position: relative;
       padding-bottom: 50px;
       a {
@@ -383,10 +385,23 @@
         border: 1px solid #E1E1E1;
 
         transition: all .3s ease;
+
+        svg {
+          display: none;
+          path {
+            transition: all .3s ease;
+          }
+        }
+
         &:hover {
           background: #0071E3;
           border: 1px solid #0071E3;
           color: #FFF;
+          svg {
+            path {
+              fill: #fff;
+            }
+          }
         }
       }
     }
