@@ -142,3 +142,19 @@ h4 {
   font-weight: 500;
   line-height: normal;
 }
+
+@media screen and (max-width: 992px) {
+  h2 {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 576px) {
+  h2 {
+    font-size: 21px;
+  }
+}

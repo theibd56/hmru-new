@@ -309,7 +309,7 @@
       }
     }
     &__wrapper {
-      display: grid;
+      display: grid !important;
       grid-template: auto / repeat(5, 1fr);
       gap: 30px;
     }
