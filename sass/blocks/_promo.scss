@@ -11,6 +11,11 @@
     overflow: hidden;
     &__title {
       color: #FFF;
+
+      font-size: 70px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 133.333%;
     }
     &__link {
       color: #FFF;
@@ -269,6 +274,20 @@
   }
   &-advantages {
     margin-top: 80px;
+    &__title {
+      color: #2C3336;
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%; /* 69.6px */
+    }
+    &__subtitle {
+      color: #2C3336;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
     &__heading {
       margin-bottom: 40px;
 
@@ -321,6 +340,12 @@
         background: linear-gradient(185deg, #0B0D0B 64.78%, rgba(11, 13, 11, 0.00) 86%);
       }
       &_title {
+        color: #FFF;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
         margin-bottom: 14px;
 
         position: relative;
@@ -375,6 +400,13 @@
   }
   &-catalog {
     margin-top: 80px;
+    &__title {
+      color: #2C3336;
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%; /* 69.6px */
+    }
     &__heading {
       margin-bottom: 40px;
 
@@ -504,7 +536,6 @@
     position: relative;
 
     overflow: hidden;
-
     &__container {
       position: relative;
       z-index: 11;
@@ -517,6 +548,10 @@
       color: #FFF;
 
       margin-bottom: 20px;
+
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 600;
     }
     &__descr {
       color: #FFF;
