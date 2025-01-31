@@ -157,6 +157,7 @@
       }
     }
     &-feedback {
+      margin-top: 40px;
       padding: 40px 0 200px;
       &__content {
         max-width: 700px;
@@ -284,6 +285,9 @@
             display: block;
           }
         }
+      }
+      &__title {
+        font-size: 18px;
       }
     }
     &-feedback {
