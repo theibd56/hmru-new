@@ -1,0 +1,120 @@
+.stickers {
+  position: fixed;
+  top: 230px;
+  right: 20px;
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &-item {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+    transition: all .3s ease;
+    overflow: hidden;
+    position: relative;
+    span {
+      display: block;
+      color: white;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+    &.stickers-sale {
+      background: #FF0000;
+      filter: drop-shadow(5px 10px 35px rgba(255, 0, 0, 0.5));
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      span {
+        transform: rotate(-12deg);
+        text-align: center;
+        font-size: 22px;
+        font-weight: 900;
+        line-height: 86.364% ; /* 86.364% */
+      }
+    }
+    &.stickers-invite {
+      background: #0071E3;
+      filter: drop-shadow(5px 10px 35px rgba(0, 113, 227, 0.5));
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      div {
+        margin-top: 10px;
+        span {
+          color:  #FFF;
+          text-align: center;
+          font-weight: 900;
+          text-transform: uppercase;
+          &:first-child {
+            font-size: 10px;
+            line-height: 150%; /* 150% */
+          }
+          &:last-child {
+            font-size: 16px;
+            line-height: 15px;
+          }
+        }
+      }
+      &:after, &:before {
+        content: '';
+        display: block;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: #FFC700;
+        filter: blur(4.5px);
+
+        position: absolute;
+        z-index: -1;
+      }
+      &:after {
+        top: 23px;
+        left: 9px;
+      }
+      &:before {
+        right: 12px;
+        bottom: -1px;
+      }
+    }
+    &.stickers-discount {
+      background: #FFA800;
+      filter: drop-shadow(5px 10px 35px rgba(255, 152, 24, 0.5));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+      span {
+        &:first-child {
+          margin-top: 7px;
+          transform: rotate(15deg);
+          text-align: center;
+          font-size: 33px;
+          font-weight: 900;
+          line-height: 33.333%; /* 33.333% */
+        }
+        &:last-child {
+          text-align: center;
+          font-size: 13px;
+          font-weight: 900;
+          line-height: 84.615%; /* 84.615% */
+        }
+      }
+    }
+  }
+  &-trigger {
+    display: none;
+    transition: all .3s ease;
+    &.active {
+      transform: rotate(-180deg);
+    }
+  }
+}

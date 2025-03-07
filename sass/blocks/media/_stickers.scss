@@ -1,0 +1,85 @@
+@media screen and (max-width: 992px) {
+  .stickers {
+    z-index: 998;
+    background: #fff;
+    box-shadow: 0 4px 10px 0 rgba(62, 83, 97, 0.1);
+    padding: 30px 5px 18px;
+    border-radius: 0 0 30px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+
+    right: 10px;
+    top: -100px;
+
+    transition: all .3s ease;
+    &.active {
+      top: 55px;
+    }
+    &-wrapper {
+      gap: 5px;
+    }
+    &-trigger {
+      display: block;
+    }
+    &-item {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      filter: drop-shadow(0 0 0);
+      &.stickers-sale {
+        span {
+          font-size: 16px;
+        }
+      }
+      &.stickers-invite {
+        gap: 2px;
+        div {
+          margin-top: 8px;
+          span {
+            &:first-child {
+              font-size: 7.5px;
+              line-height: 120%;
+            }
+            &:last-child {
+              font-size: 11px;
+              line-height: 10px;
+            }
+          }
+        }
+        svg {
+          min-height: 13px;
+          min-width: 13px;
+        }
+        &:after, &:before {
+          width: 8.6px;
+          height: 8.6px;
+        }
+        &:after {
+          left: 6px;
+          top: 14px;
+        }
+        &:before {
+          bottom: -0.8px;
+          right: 8px;
+        }
+      }
+      &.stickers-discount {
+        gap: 6px;
+        span {
+          &:first-child {
+            margin-top: 6px;
+            font-size: 23px;
+            line-height: 33.333%; /* 33.333% */
+          }
+          &:last-child {
+            font-size: 9px;
+            line-height: 84.615%; /* 84.615% */
+          }
+        }
+      }
+    }
+  }
+}

@@ -187,3 +187,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (document.getElementById('js-stickers')) {
+        const stickers = document.getElementById('js-stickers');
+        const stickersTrigger = document.getElementById('js-stickers-trigger');
+
+        stickersTrigger.addEventListener('click', function() {
+            stickers.classList.toggle('active');
+            stickersTrigger.classList.toggle('active');
+        })
+    }
+
+});
